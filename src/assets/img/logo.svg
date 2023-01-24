@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="297mm" height="210mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 29700 21000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#201E1E;stroke-width:141.11;stroke-miterlimit:22.9256}
+    .str2 {stroke:#201E1E;stroke-width:194.03;stroke-miterlimit:22.9256}
+    .str0 {stroke:#201E1E;stroke-width:20;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#201E1E}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M7393.8 4095.55l13848.87 0 0 14125.74 -13848.87 0 0 -14125.74z"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2359595841008">
+   <g style="clip-path:url(#id0)">
+    <image x="7393.8" y="4095.55" width="13848.87" height="14125.74" xlink:href="logo nuevo_Images\logo nuevo_ImgID1.png"/>
+   </g>
+  </g>
+  <g id="_2359596838128">
+   <polygon class="fil0 str0" points="10162.84,8095.99 11700.13,6889.06 11700.13,12296.74 10186.12,13624.1 "/>
+   <polygon class="fil0 str0" points="15464.04,10418.77 20742.56,10399.34 19026.63,11902.32 13679.34,11919.19 "/>
+   <line class="fil1 str1" x1="14189.18" y1="11653.72" x2="20401.52" y2= "6154.15" />
+   <path class="fil0 str0" d="M13093.58 5672.66l1594.11 -1536.97c328.22,402.79 1317.3,1271.93 2346.61,1630.44 1766.03,625.51 2995.82,357.84 3770.05,203.54l-1919.17 1563.14c-755.3,297.23 -2551.2,136.88 -3372.93,-215.33 -998.1,-363.79 -1922.41,-1067.02 -2418.67,-1644.82z"/>
+   <line class="fil1 str2" x1="12870.21" y1="5869.25" x2="12870.21" y2= "15169.65" />
+   <line class="fil1 str1" x1="10241.02" y1="8182.38" x2="14758.32" y2= "4222.05" />
+   <path class="fil0 str0" d="M20738.84 11655.63l0 3364.09c-1803.35,2339.72 -5760.17,3960.49 -9585.63,1805.82 -2030.54,-1078.89 -4430.05,-4194.63 -3567.63,-8063.16l3019.84 -2600.47c-2611.84,2619.65 -2005.44,6914.4 555.42,8858.55 3885.21,2949.55 8678.99,583.89 9578,-3364.83z"/>
+  </g>
+  <rect class="fil1" x="4831.86" y="489.52" width="20035.22" height="20035.22"/>
+ </g>
+</svg>
