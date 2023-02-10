@@ -1,0 +1,50 @@
+.container-main-home{
+    margin: 0;
+    margin: 0px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-units{
+        background-color: #ffff;
+        width: 350px;
+        
+        a:link {
+            list-style: none;
+            font-style: none;
+            text-decoration: none;
+          }
+          
+          a:visited {
+            list-style: none;
+            font-style: none;
+            text-decoration: none;
+          }
+
+        button{
+            border-radius: 20px;
+            border: none;
+            h2{
+                margin: 0.75rem 0rem;
+            }
+            img{
+                width: 90%;
+                border-radius: 20px;
+            }
+            h3{
+                margin: 0.25rem;
+                font-family: 'roboto';
+                font-weight: 300;
+            }
+            h4{
+                margin: 0.5rem;
+                color: #535bf2;
+                font-size: 2rem;
+            }
+        }
+
+        button:hover{
+            border: 1.5px solid #535bf2;
+        }
+    }
+}
