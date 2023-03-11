@@ -1,0 +1,122 @@
+.Cart-container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        color: #535bf2;
+    }
+    
+    .Cart-card-main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1.5rem 0;
+
+        a{
+            text-decoration: none;
+            padding: 2rem;
+            border-radius: 2rem;
+
+            .Cart-card-mini{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+    
+                img{
+                    width: 100px;
+                    height: auto;
+                    border-radius: 1rem;
+                }
+    
+                h1{
+                    font-family: 'Roboto';
+                    font-size: 1.5rem;
+                    color: #535bf2;
+                    width: 250px;
+                }
+    
+                h2{
+                    font-family: 'Roboto';
+                    font-size: 0.75rem;
+                    color: darkgray;
+                    margin: 1rem;
+                }    
+            }
+        }
+
+        a:hover{
+            background-color: #535bf230;
+        }
+
+
+        h3{
+            font-family: 'Roboto';
+            font-size: 2rem;
+            color: #535bf2;
+            margin: 1rem;
+            
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            background-color: #D62828;
+            border: 1px solid #D62828;
+            border-radius: 1rem;
+            color: white;
+        }
+        
+        button:hover{
+            color: #D62828;
+            border: 1px solid #D62828;
+            background-color: white;
+        }
+    }
+
+
+    .container-Cart-btn{
+        display: flex;
+        flex-direction: row;
+        button{            
+            width: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            background-color: #535bf2;
+            border: 1px solid #535bf2;
+            border-radius: 1rem;
+            color: white;
+        }
+
+        button:nth-child(3){
+            width: auto;
+        }
+        
+        button:hover{
+            color: #535bf2;
+            border: 1px solid #535bf2;
+            background-color: white;
+        }
+
+        h3{
+            font-family: 'Roboto';
+            font-size: 2rem;
+            color: #535bf2;
+            margin: 1rem;   
+        }
+    }
+}

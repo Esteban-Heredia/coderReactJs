@@ -1,49 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import gDatos from "../assets/productos/gDatos";
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Card(props) {
-  const [productData, setProductData] = useState([]);
-
-  const {categoria} = useParams
-
-
-  useEffect(() => {
-    if (categoria) {
-      gDatos()
-        .then((resuelto) => {
-          setProductData(resuelto);
-          console.log(resuelto)
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-
-    }
-  }, []);
-
+function Card({ product }) {
 
   return (
-    <div className="container-main-card">
-      {productData && productData.length > 0 ? (
-        productData.map((e) => (
-          <div className="card-units" key={e.id}>
-            <Link className="card-container" to={`/detalleProducto/${e.id}`}>
+          <div className="card-units" >
+            <Link className="card-container" to={`/detalleProducto/${product.id}`}>
               <button type="button">
               <h2>
-                {e.nombre} {e.color}
+                {product.nombre} {product.color}
               </h2>
-              <img src={e.foto} alt="foto" />
-              <h3> {e.categoria} </h3>
-              <h4> $ {e.precio}.00 </h4>
+              <img src={product.foto} alt="foto" />
+              <h3> {product.categoria} </h3>
+              <h4> $ {product.precio}.00 </h4>
               </button>
             </Link>
           </div>
-        ))
-      ) : (
-        <p>Cargando...</p>
-      )}
-    </div>
   );
 }
 

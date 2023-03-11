@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import ButtonSC from "./ButtonSC";
+import { Link, useParams } from "react-router-dom";
+import { useCartContext } from "./CartContext";
 
 function NavBar() {
   const [state, setState] = useState({
@@ -20,13 +20,9 @@ function NavBar() {
   function descartables() {
     setState({ ...state, descartables: !state.descartables });
   }
-
-  const [clickCount, setClickCount] = useState(0)
   
-  const handleClick = () => {
-  setClickCount (clickCount + 1)
-  };
-
+  const { carritoItems } = useCartContext();
+  
   return (
     <div className="container-main-navbar">
       <div className="container-sub-logo">
@@ -40,44 +36,27 @@ function NavBar() {
       </div>
       <div className="container-sub-button">
         <div className="container-button-div">
-          <Link to= '/categoria/Tintas'>
+          <Link to= "/categoria/tinta">
           <button onClick={tintas}>Tintas</button>
-          <div className={state.tintas ? "show" : "hide"}>
-            <div className="elementos">elemento1</div>
-            <div className="elementos">elemento2</div>
-            <div className="elementos">elemento3</div>
-          </div>
           </Link>
         </div>
         <div className="container-button-div">
-          <Link to= '/categoria/agujas'>
+          <Link to= "/categoria/agujas">
           <button onClick={agujas}>Agujas</button>
-          <div className={state.agujas ? "show" : "hide"}>
-            <div className="elementos">elemento1</div>
-            <div className="elementos">elemento2</div>
-            <div className="elementos">elemento3</div>
-          </div>
           </Link>
         </div>
         <div className="container-button-div">
-          <Link to= '/categoria/descartable'>
+          <Link to="/categoria/descartable">
           <button onClick={descartables}>Descartables</button>
-          <div className={state.descartables ? "show" : "hide"}>
-            <div className="elementos">elemento1</div>
-            <div className="elementos">elemento2</div>
-            <div className="elementos">elemento3</div>
-          </div>
           </Link>
         </div>
-      </div>
-      <div className="container-search">
-        <span className="material-icons-outlined">search</span>
       </div>
       <div className="container-shopping">
-        <p className= {clickCount === 0 ? 'invisible' : ''} > {clickCount} </p>
+        <Link to='/cart'>
+        <p className= {carritoItems.length === 0 ? 'invisible' : ''} > {carritoItems.length} </p>
         <span className="material-icons-outlined">shopping_cart</span>
+        </Link>
       </div>
-      <ButtonSC handleClickProp={handleClick}/>
     </div>
   );
 }
